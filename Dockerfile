@@ -5,7 +5,7 @@ WORKDIR /app
 COPY pom.xml /pom.xml
 COPY src /src
 
-RUN mvn package
+RUN mvn clean package
 
 COPY target/*.jar app.jar
 
